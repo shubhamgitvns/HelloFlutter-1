@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home:Text("Varanasi Software Junction")));
+  runApp(
+    MaterialApp(
+      home: Center(
+        child: Text("Varanasi Software Junction"),
+      ),
+    ),
+  );
 }
