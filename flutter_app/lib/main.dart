@@ -3,25 +3,18 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.blueAccent,
-        appBar: AppBar(
+  runApp(VSJApp());
+}
+class VSJApp extends StatelessWidget
+{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return MaterialApp(
+home:Scaffold(
+  backgroundColor: Colors.blueAccent,
 
-          centerTitle: true,
-          title:  Text("Varanasi Software Junction"),
-            backgroundColor: Colors.blueGrey,
-          ),
-
-        body:
-
-        Center(child: Image(
-          image: AssetImage(
-              "images/vsjpl.png"),
-        ),
-      ),
     ),
-    ),
-  );
+    );
+  }
 }
