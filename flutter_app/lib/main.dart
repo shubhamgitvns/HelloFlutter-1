@@ -15,13 +15,13 @@ class VSJApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Container(
-                width: double.infinity,
-
+                width: 100,
+                height: 100,
                 color: Colors.white,
-               // child: Center(child: Text("Column One")),
+                child: Center(child: Text("Column One")),
               ),
               Container(
                 width: 100,
