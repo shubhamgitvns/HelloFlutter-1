@@ -14,6 +14,7 @@ class VSJApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
+
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.end,
@@ -24,6 +25,7 @@ class VSJApp extends StatelessWidget {
                 color: Colors.white,
                 child: Center(child: Text("Column One")),
               ),
+              SizedBox(height: 5,),
               Container(
                 width: 100,
                 height: 100,
