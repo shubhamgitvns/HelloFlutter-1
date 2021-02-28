@@ -30,6 +30,13 @@ class VSJApp extends StatelessWidget {
                       fontFamily: "Pacifico"),
                 ),
               ),
+              Center(
+                child:Text("App Developers",
+                style: TextStyle(
+                  fontFamily:"SourceSansPro",color:Colors.white,
+                  fontSize:28,fontWeight:FontWeight.bold,
+                ),)
+              ),
             ],
           ),
         ),
