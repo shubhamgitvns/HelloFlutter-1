@@ -12,7 +12,7 @@ class VSJApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
             children: [
