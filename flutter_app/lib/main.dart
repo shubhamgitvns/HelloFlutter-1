@@ -15,9 +15,12 @@ class VSJApp extends StatelessWidget {
         backgroundColor: Colors.lightBlue,
         body: SafeArea(
           child: Column(
-            children: [CircleAvatar(
-              
-            )],
+            children: [
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage("images/vsjpl.png"),
+              )
+            ],
           ),
         ),
       ),
