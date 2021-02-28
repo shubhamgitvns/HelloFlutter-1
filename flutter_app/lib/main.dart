@@ -15,7 +15,7 @@ class VSJApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            verticalDirection: VerticalDirection.up,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Container(
                 width: 100,
