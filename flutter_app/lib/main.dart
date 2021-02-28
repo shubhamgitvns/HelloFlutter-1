@@ -13,14 +13,37 @@ class VSJApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
-
         body: SafeArea(
-          child: Container(
-            width: 100,
-              height: 100,
-              margin: EdgeInsets.all(10),
-              padding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
-              color: Colors.white, child: Text("Varanasi Software Junction")),
+          child: Column(
+            children: [
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.blue,
+                child: Center(child: Text("Column One")),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.yellow,
+
+                child: Center(child: Text("Column Two",style: TextStyle(color:Colors.blue,fontWeight: FontWeight.bold),)),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.pink,
+                child: Center(child: Text("Column Three")),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.brown,
+
+                child: Center(child: Text("Column Four")),
+              )
+            ],
+          ),
         ),
       ),
     );
