@@ -18,7 +18,7 @@ class VSJApp extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Container(
-                width: 200,
+                width: double.infinity,
                 height: 100,
                 color: Colors.white,
                 child: Center(child: Text("Column One")),
