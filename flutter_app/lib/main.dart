@@ -12,27 +12,36 @@ class VSJApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text("Varanasi Software Junction"),
+        ),
         backgroundColor: Colors.teal,
         body: SafeArea(
-
-          child: Row(
-
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Container(
-                width: 100,
-                height: 100,
-                color: Colors.white,
-                child: Center(child: Text("Column One")),
+                child: Center(
+                  child: Image(
+                    image: AssetImage("images/vsjpl.png"),
+                  ),
+                ),
               ),
-              SizedBox(width: 5,),
+              SizedBox(
+                width: 5,
+              ),
               Container(
                 width: 100,
                 height: 100,
                 color: Colors.yellow,
-
-                child: Center(child: Text("Column Two",style: TextStyle(color:Colors.blue,fontWeight: FontWeight.bold),)),
+                child: Center(
+                    child: Text(
+                  "Column Two",
+                  style: TextStyle(
+                      color: Colors.blue, fontWeight: FontWeight.bold),
+                )),
               ),
               Container(
                 width: 100,
@@ -44,7 +53,6 @@ class VSJApp extends StatelessWidget {
                 width: 100,
                 height: 100,
                 color: Colors.brown,
-
                 child: Center(child: Text("Column Four")),
               )
             ],
