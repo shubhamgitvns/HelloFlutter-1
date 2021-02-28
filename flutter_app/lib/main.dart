@@ -20,7 +20,16 @@ class VSJApp extends StatelessWidget {
                 radius: 50,
                 backgroundImage: AssetImage("images/vsjpl.png"),
               ),
-              Text("Varanasi Software Junction",style: TextStyle(color: Colors.white,fontSize: 28,fontWeight: FontWeight.bold),),
+              Center(
+                child: Text(
+                  "Varanasi Software Junction",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Pacifico"),
+                ),
+              ),
             ],
           ),
         ),
