@@ -19,9 +19,9 @@ class VSJApp extends StatelessWidget {
             children: [
               Container(
                 width: double.infinity,
-                height: 100,
+
                 color: Colors.white,
-                child: Center(child: Text("Column One")),
+               // child: Center(child: Text("Column One")),
               ),
               Container(
                 width: 100,
