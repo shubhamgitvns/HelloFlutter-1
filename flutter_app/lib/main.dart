@@ -31,7 +31,7 @@ class VSJApp extends StatelessWidget {
                 ),
               ),
               Center(
-                child:Text("App Developers",
+                child:Text("APP DEVELOPERS",
                 style: TextStyle(
                   fontFamily:"SourceSansPro",color:Colors.white,
                   fontSize:28,fontWeight:FontWeight.bold,
