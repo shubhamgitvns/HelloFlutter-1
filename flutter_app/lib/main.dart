@@ -26,7 +26,7 @@ class VSJApp extends StatelessWidget {
                 color: Colors.white,
                 child: Center(child: Text("Column One")),
               ),
-              SizedBox(height: 5,),
+              SizedBox(width: 5,),
               Container(
                 width: 100,
                 height: 100,
