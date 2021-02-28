@@ -19,7 +19,8 @@ class VSJApp extends StatelessWidget {
               CircleAvatar(
                 radius: 50,
                 backgroundImage: AssetImage("images/vsjpl.png"),
-              )
+              ),
+              Text("Varanasi Software Junction",style: TextStyle(color: Colors.white,fontSize: 28,fontWeight: FontWeight.bold),),
             ],
           ),
         ),
