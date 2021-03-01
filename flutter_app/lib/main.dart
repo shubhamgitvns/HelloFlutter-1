@@ -31,11 +31,74 @@ class VSJApp extends StatelessWidget {
                 ),
               ),
               Center(
-                child:Text("APP DEVELOPERS",
+                  child: Text(
+                "APP DEVELOPERS",
                 style: TextStyle(
-                  fontFamily:"SourceSansPro",color:Colors.teal[100],
-                  fontSize:28,fontWeight:FontWeight.bold,  letterSpacing: 5,
-                ),)
+                  fontFamily: "SourceSansPro",
+                  color: Colors.teal[100],
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 5,
+                ),
+              )),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25,
+                ),
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Center(
+                      child: Text(
+                        "09335874326",
+                        style: TextStyle(
+                          color: Colors.teal.shade900,
+                          fontFamily: "SourceSansPro",
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25,
+                ),
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Center(
+                      child: Text(
+                        "varanasisoftwarejunction@gmail.com",
+                        style: TextStyle(
+                            color: Colors.teal.shade900,
+                            fontFamily: "SourceSansPro",
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ],
           ),
