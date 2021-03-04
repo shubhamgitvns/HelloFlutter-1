@@ -1,4 +1,4 @@
-package com.varanasisoftwarejunction.flutter_app
+package com.varanasisoftwarejunction.diceapp
 
 import io.flutter.embedding.android.FlutterActivity
 
