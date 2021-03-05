@@ -34,9 +34,11 @@ class DiceRow extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Expanded(
+            //flex: 2,
             child: Image.asset("images/dice2.png"),
           ),
           Expanded(
+            //flex: 25,
             child: Image.asset("images/dice6.png"),
           ),
         ],
