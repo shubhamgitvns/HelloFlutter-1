@@ -35,17 +35,19 @@ class DiceRow extends StatelessWidget {
       children: [
         Expanded(
           //flex: 2,
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: FlatButton(
-              child: Image.asset("images/dice2.png"),
-            ),
+          child: FlatButton(
+            onPressed: (){
+              print("Left Button");
+            },
+            child: Image.asset("images/dice2.png"),
           ),
         ),
         Expanded(
           //flex: 25,
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
+          child: FlatButton(
+            onPressed: (){
+              print("Right Button");
+            },
             child: Image.asset("images/dice6.png"),
           ),
         ),
