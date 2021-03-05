@@ -30,8 +30,8 @@ class DiceRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Center(
-      child: Row(
+    return  Row(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Expanded(
             child: Image.asset("images/dice2.png"),
@@ -40,7 +40,6 @@ class DiceRow extends StatelessWidget {
             child: Image.asset("images/dice6.png"),
           ),
         ],
-      ),
-    );
+      );
   }
 }
