@@ -30,18 +30,26 @@ class DiceRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return  Row(
+    return Row(
       crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Expanded(
-            //flex: 2,
-            child: Image.asset("images/dice2.png"),
+      children: [
+        Expanded(
+          //flex: 2,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FlatButton(
+              child: Image.asset("images/dice2.png"),
+            ),
           ),
-          Expanded(
-            //flex: 25,
+        ),
+        Expanded(
+          //flex: 25,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
             child: Image.asset("images/dice6.png"),
           ),
-        ],
-      );
+        ),
+      ],
+    );
   }
 }
