@@ -16,7 +16,7 @@ class VSJApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.teal[900],
           title: Center(
-            child: Text("Varanasi Software Junction"),
+            child: Text("Varanasi Software Junction",style: TextStyle(fontFamily: "Pacifico"),),
           ),
         ),
         backgroundColor: Colors.teal,
@@ -26,20 +26,39 @@ class VSJApp extends StatelessWidget {
   }
 }
 
-class DiceRow extends StatelessWidget {
+class DiceRow extends StatefulWidget {
+  @override
+  _DiceRowState createState() => _DiceRowState();
+}
+//************************************************************8
+
+
+
+
+
+//*****************************************************************************************888
+class _DiceRowState extends State<DiceRow> {
+  int leftdice=4;
+  int rightdice=1;
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Row(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+
         Expanded(
           //flex: 2,
           child: FlatButton(
             onPressed: (){
-              print("Left Button");
+              print("Left Button $leftdice");
+              setState(() {
+leftdice=update(leftdice);
+
+              });
+
+
             },
-            child: Image.asset("images/dice2.png"),
+            child: Image.asset("images/dice$leftdice.png"),
           ),
         ),
         Expanded(
@@ -47,11 +66,28 @@ class DiceRow extends StatelessWidget {
           child: FlatButton(
             onPressed: (){
               print("Right Button");
+              setState(() {
+                rightdice=update(rightdice);
+
+              });
             },
-            child: Image.asset("images/dice6.png"),
+            child: Image.asset("images/dice$rightdice.png"),
           ),
         ),
       ],
     );
   }
+  int update(int n)
+  {
+    
+    n=(n ) % 6 +1;
+    if(n==0)
+      n=  n+1;
+
+    return n;
+  }
 }
+
+
+
+
