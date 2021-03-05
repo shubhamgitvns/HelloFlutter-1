@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -79,10 +80,9 @@ leftdice=update(leftdice);
   }
   int update(int n)
   {
-    
-    n=(n ) % 6 +1;
-    if(n==0)
-      n=  n+1;
+    var rng = new Random();
+   n= rng.nextInt(6) + 1;
+   
 
     return n;
   }
