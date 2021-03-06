@@ -1,4 +1,4 @@
-package com.varanasisoftwarejunction.flutter_app
+package com.varanasisoftwarejunction.music_app
 
 import io.flutter.embedding.android.FlutterActivity
 
