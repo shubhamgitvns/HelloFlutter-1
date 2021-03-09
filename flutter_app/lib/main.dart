@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
+import 'package:audioplayers/audio_cache.dart';
 
 void main() {
   runApp(MusicApp());
@@ -28,6 +29,14 @@ class MusicApp extends StatelessWidget {
                 child: Image(
                   image: AssetImage("images/vsjpl.png"),
                 ),
+              ),
+              Center(
+                child:FlatButton(onPressed: (){
+                  print("I was clicked");
+                  AudioCache player = AudioCache(prefix: 'images/');
+                  player.play('note1.wav');
+
+                },child: Text("Play",style: TextStyle(fontSize: 24,backgroundColor: Colors.pink,color: Colors.brown),),)
               ),
             ],
           ),
