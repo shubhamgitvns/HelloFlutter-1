@@ -1,6 +1,7 @@
-package com.varanasisoftwarejunction.flutter_app
+package com.varanasisoftwarejunction.quiz_app
 
 import io.flutter.embedding.android.FlutterActivity
 
-class MainActivity: FlutterActivity() {
+class
+MainActivity: FlutterActivity() {
 }
